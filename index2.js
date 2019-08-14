@@ -36,53 +36,57 @@
 // - sábado. Saturday.
 // - domingo. Sunday.
 
-let daySpan = prompt("Enter the day to see");
+let daySpan = "";
 
-switch (daySpan) {
-  case "Monday":
-    alert("lunes");
-    break;
-  case "Tuesday":
-    alert("jueves");
-    break;
-  case "Wednesday":
-    alert("miércoles");
-    break;
-  case "Thursday":
-    alert("jueves");
-    break;
-  case "Friday":
-    alert("viernes");
-    break;
-  case "Saturday":
-    alert("sábado");
-    break;
-  case "Sunday":
-    alert("domingo");
-    break;
-  default:
-    alert("No Match!");
+while (daySpan !== "q") {
+  daySpan = prompt("Enter the day to see or press 'q' to quit");
+  switch (daySpan) {
+    case "q":
+      break;
+    case "Monday":
+      alert("lunes");
+      break;
+    case "Tuesday":
+      alert("jueves");
+      break;
+    case "Wednesday":
+      alert("miércoles");
+      break;
+    case "Thursday":
+      alert("jueves");
+      break;
+    case "Friday":
+      alert("viernes");
+      break;
+    case "Saturday":
+      alert("sábado");
+      break;
+    case "Sunday":
+      alert("domingo");
+      break;
+    default:
+      alert("No Match!");
+  }
 }
-
 // ### Problem 3:
 // Put the start of your program in a main function.
 // Ask the user what size shirt they want to order (you decide the shirt sizes).
 // Once they select the size of shirt add their selection to an array.
-let userSize = prompt("Enter your shirt size");
-
-switch (userSize) {
-  case "small":
-    console.log("order small shirt");
-    break;
-  case "medium":
-    console.log("order medium shirt");
-    break;
-  case "large":
-    console.log("order large shirt");
-    break;
-  case "x-large":
-    console.log("order x-large shirt");
-    break;
-  default:
-    console.log("we dont have that size");
-}
+// let userSize = prompt("Enter your shirt size");
+//
+// switch (userSize) {
+//   case "small":
+//     console.log("order small shirt");
+//     break;
+//   case "medium":
+//     console.log("order medium shirt");
+//     break;
+//   case "large":
+//     console.log("order large shirt");
+//     break;
+//   case "x-large":
+//     console.log("order x-large shirt");
+//     break;
+//   default:
+//     console.log("we dont have that size");
+// }
